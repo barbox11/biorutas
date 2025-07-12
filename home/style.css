@@ -784,6 +784,44 @@ body {
     font-family: 'Volkhov', serif;
 }
 
+/* Patrocinadores */
+.airlines-section {
+    background-color: #087bee;
+    padding: 6rem 0; /* Arregla el padding */
+    text-align: center;
+}
+
+.airlines-section .row {
+    justify-content: center;
+}
+/* Estilo para los logos */
+.airline-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%; /* Hace los logos circulares */
+     margin: 10px; /* Margen más pequeño */
+    filter: grayscale(100%);
+    opacity: 0.66;
+    transition: all 0.3s ease;
+}
+
+/* Hover */
+.airline-logo:hover {
+    filter: none;
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .airline-logo {
+        width: 70px;
+        height: 70px;
+        margin: 5px;
+    }
+}
+
 
 /* footer */
 
