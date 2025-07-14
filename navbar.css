@@ -1,4 +1,12 @@
 /* navbar */
+:root {
+    --primary: #009fe3;
+    --secondary: #5eb6f9;
+    --dark: #2d3a4a;
+    --light: #f8f9fa;
+    --green: #90BA26;
+}
+
 .navbar {
     padding: 0.1rem 0;
     background-color: rgba(255, 255, 255, 0.5);
@@ -169,7 +177,7 @@
     }
 
     .login-btn {
-        width: 100%;
+        width: calc(100vw - 1rem);
         justify-content: center;
         margin: 0.5rem 0;
     }
