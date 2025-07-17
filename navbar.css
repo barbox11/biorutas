@@ -138,7 +138,7 @@
 }
 
 /* RESPONSIVE MOBILE */
-@media (max-width: 992px) {
+@media (max-width:  768px) {
     .navbar-collapse {
         grid-template-columns: auto 1fr auto;
         position: fixed;
@@ -156,7 +156,7 @@
         z-index: 1000;
         flex-direction: column;
         
-        /* ESTO ES LO QUE FALTABA - Estado oculto por defecto */
+
         transform: translateY(-100%);
         opacity: 0;
         visibility: hidden;
@@ -192,9 +192,13 @@
     }
 
     .login-btn {
-        width: calc(100vw - 1rem);
-        justify-content: center;
-        margin: 0.5rem 0;
+    width: 80%;
+    max-width: 80%;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: 0.5rem 0;
+}
+
     }
 
     .dropdown-menu {
@@ -218,13 +222,18 @@
         transition: all 0.3s ease-in-out;
     }
     .navbar-toggler {
-    width: 50px;           
-    height: 50px;          
-    border-radius: 7px;
-    padding: 8px;
-    border: 2px solid #333;
+    width: 35px;           
+    height: 35px;          
+    border-radius: 3px;
+    padding: 0.10rem;
+    border: 1px solid #333;
     border-radius: 10px;
     margin-left: auto;    
+    }
+    .navbar-toggler-icon {
+    width: 1.6em;         
+    height: 1.6em;        
+    background-size: 70%;  
     }
     
     .navbar-backdrop.show {
@@ -235,4 +244,4 @@
     body.navbar-open {
         overflow: hidden;
     }
-}
+
